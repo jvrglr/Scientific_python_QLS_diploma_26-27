@@ -3,7 +3,7 @@
 
 | Week | Session | Lead | Topics |
 |---|---|---|---|
-| Week 1 | Lecture 1 | Javier | Anaconda and environments; VS Code/Jupyter; Git/GitHub |
+| Week 1 16/09/26| Lecture 1 | Javier | Anaconda and environments; VS Code/Jupyter; Git/GitHub |
 | Week 1 | Lecture 2 | Amna | Variables and types; iterables; strings; loops |
 | Week 2 | Lecture 3 | Javier | Functions; objects; introduction to classes |
 | Week 2 | Lecture 4 | Amna | Scientific Python: NumPy and SciPy; njit |
