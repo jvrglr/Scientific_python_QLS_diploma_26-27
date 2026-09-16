@@ -1,6 +1,8 @@
 # Scientific python QLS diploma 26-27
 ## Contact info
 Amna Khraibut  : akhraibu@ictp.it
+
+
 Javier Aguilar : jaguilar@ictp.it
 
 ## Structure of the course
