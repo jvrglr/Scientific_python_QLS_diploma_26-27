@@ -21,9 +21,9 @@ Each of you will have an independent oral exam based on your project. During the
 | Week | Session | Lead | Topics |
 |---|---|---|---|
 | Week 1 16/09/26| Lecture 1 | Javier | Anaconda and environments; VS Code/Jupyter; Git/GitHub |
-| Week 1 18/09/26| Lecture 2 | Amna | Variables and types; iterables; strings; loops |
-| Week 2 25/09/26| Lecture 3 |  Amna| Scientific Python: NumPy and SciPy; njit|
-| Week 2 30/09/26| Lecture 4 | Javier | Functions; objects; introduction to classes  |
+| Week 1 18/09/26| Lecture 2 | Amna | Variables and types; iterables; strings |
+| Week 2 25/09/26| Lecture 3 |  Amna| Scientific Python: loops, NumPy and SciPy|
+| Week 2 30/09/26| Lecture 4 | Javier | Functions; njit; introduction to classes  |
 | Week 3 07/10/26| Lecture 5 | Javier | Pandas, Matplotlib and decorators |
 | Week 3 09/10/26| Lecture 6 | Amna | JAX and project selection |
 | Week 4 14/10/26| Lecture 7 | Javier | Project |
