@@ -1,9 +1,9 @@
 # Scientific python QLS diploma 26-27
 ## Contact info
-Amna Khraibut  : akhraibu@ictp.it room 209 Old Sissa building (QLS section).
+Amna Khraibut  : akhraibu@ictp.it. Office; room 209 former SISSA building (QLS section).
 
 
-Javier Aguilar : jaguilar@ictp.it. room 212 Old Sissa building (QLS section).
+Javier Aguilar : jaguilar@ictp.it. Office: room 212 former SISSA building (QLS section).
 
 ## Structure of the course
 
