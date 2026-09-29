@@ -17,8 +17,11 @@ Javier Aguilar : jaguilar@ictp.it. room 212 Old Sissa building (QLS section).
 Each of you will have an independent oral exam based on your project. During the exam, you will have to answer questions about specific parts of your code. We may also ask other types of questions, such as what data types you used or what the inputs/outputs of your program are. We might also ask you to modify your code in person. **NO AI ALLOWED.**
 
 -Assignments: 20%
+
 -Project and exam: 80%
+
   -Project quality and oral presentation: 40%
+  
   -Answers to questions: 40%
 
 ## Course Schedule
