@@ -1,0 +1,276 @@
+# Additional Python Exercises
+
+These exercises use dummy experimental and particle data to practise topics covered in Lectures 2 and 3, such as:
+
+- conditional statements: `if`, `elif`, `else`
+- `for` loops
+- `while` loops
+- functions
+- `zip()`
+- lists and nested collections
+- data cleaning and storage
+
+The exercises also include:
+
+- missing data (`np.nan`)
+
+So before starting, import NumPy:
+
+```python
+import numpy as np
+```
+to handle invalid data. I have done the first exercise for you.
+---
+
+## Exercise 1 — Cleaning Temperature Measurements
+
+The following temperatures were recorded during an experiment:
+
+```python
+temperature = [
+    298.4, 299.1, 300.2, np.nan, 301.5,
+    299.8, 300.6, 301.1, np.nan, 298.9,
+    299.7, 300.4, 302.1, 301.6, np.nan,
+    300.1, 299.5, 300.8, 301.3, 299.9
+]
+```
+
+1. Use a `for` loop to iterate through the measurements.
+2. Use `np.isnan()` and an `if` statement to identify missing measurements.
+3. Store only the valid measurements in a new list called `clean_temperature`.
+4. Count the number of missing measurements.
+5. Calculate the mean temperature of the cleaned data using `def` using two decimal places.
+
+Solution:
+
+import numpy as np
+
+# Temperature measurements
+temperature = [
+    298.4, 299.1, 300.2, np.nan, 301.5,
+    299.8, 300.6, 301.1, np.nan, 298.9,
+    299.7, 300.4, 302.1, 301.6, np.nan,
+    300.1, 299.5, 300.8, 301.3, 299.9
+]
+
+# Empty list to store valid temperature measurements
+temp = []
+
+# Counter for missing measurements
+count = 0
+
+# Loop through the temperature data with index and value
+for i, val in enumerate(temperature):
+
+    # Check if the measurement is NaN
+    if np.isnan(val):
+        print(i, val)
+        count += 1
+
+    # Store valid measurements
+    else:
+        temp.append(val)
+
+# Display cleaned data, number of valid measurements, and data type
+print(temp, len(temp), type(temp))
+
+# Display number of missing measurements
+print(count)
+
+
+# Function to calculate the mean temperature
+def mean_temp(temp):
+    mean_temp = sum(temp) / len(temp)
+    return mean_temp
+
+
+# Calculate and display the mean of the cleaned data
+print(mean_temp(temp))
+---
+
+## Exercise 2 — Removing Unphysical Measurements
+
+The following velocities were obtained from a particle-tracking experiment:
+
+```python
+velocity = [
+    1.24, 1.31, 1.18, 1.42, 1.37,
+    1.29, 12.8, 1.33, 1.21, -9.5,
+    1.40, 1.36, 1.27, 1.32, 1.25,
+    1.44, 1.30, 1.22, 1.35, 1.28
+]
+```
+
+The expected experimental range is
+
+$$
+0.5 \leq v \leq 2.0.
+$$
+
+1. Use a `for` loop and a conditional statement to identify measurements outside the expected range.
+2. Store valid measurements in `clean_velocity`.
+3. Store rejected measurements in `rejected_velocity`.
+4. Print both lists.
+5. Calculate the mean velocity before and after cleaning.
+
+---
+
+## Exercise 3 — Mass, Velocity and Kinetic Energy
+
+The masses and velocities of particles are:
+
+```python
+masses = [
+    1.20, 1.05, 0.98, 1.31, 1.15,
+    1.42, 1.08, 1.27, 1.18, 1.33,
+    1.11, 1.25, 1.37, 1.02, 1.29
+]
+
+velocities = [
+    2.4, 1.8, np.nan, 3.1, 2.7,
+    1.9, 2.2, 3.4, np.nan, 2.6,
+    1.7, 2.9, 3.2, 2.1, 2.5
+]
+```
+
+The kinetic energy is
+
+$$
+E_k = \frac{1}{2}mv^2.
+$$
+
+1. Define a function called:
+
+```python
+def kinetic_energy(m, v):
+```
+
+that returns the kinetic energy.
+
+2. Use `zip()` to iterate through `masses` and `velocities` simultaneously.
+3. Use `np.isnan()` to ignore particles for which the velocity is missing.
+4. Calculate the kinetic energy of every valid particle.
+5. Store the energies in a new list called `energies`.
+6. Use a conditional statement to count how many particles have $E_k > 4$.
+
+---
+
+## Exercise 4 — Cleaning a Time Series
+
+The position of a particle was measured at regular time intervals:
+
+```python
+time = [
+    0.0, 0.5, 1.0, 1.5, 2.0,
+    2.5, 3.0, 3.5, 4.0, 4.5,
+    5.0, 5.5, 6.0, 6.5, 7.0
+]
+
+position = [
+    0.00, 0.31, 0.68, np.nan, 1.25,
+    1.61, 1.88, 2.20, np.nan, 2.91,
+    3.18, 3.52, 3.91, np.nan, 4.55
+]
+```
+
+1. Create a table of `time` and `position`.
+2. Ignore measurements where the position is `np.nan`.
+3. Store the valid values in two new lists:
+
+```python
+clean_time = []
+clean_position = []
+```
+
+4. Count how many measurements were removed.
+5. Print the cleaned time and position data as two columns.
+
+---
+
+## Exercise 5 — Classifying Particle Speeds
+
+The measured speeds of particles are:
+
+```python
+speeds = [
+    412, 385, 521, 467, 298,
+    610, 445, 502, 376, 489,
+    550, 321, 430, 472, 515,
+    399, 580, 348, 461, 537,
+    420, 493, 365, 558, 441,
+    476, 309, 625, 454, 505
+]
+```
+
+1. Check is nan exists in the data.
+2. Count the number of nans and their indices, else print "data is clean."
+3. Use a `for` loop with `if`, `elif`, and `else` to classify the particles as:
+
+   - `slow`: $v < 400$
+   - `medium`: $400 \leq v < 500$
+   - `fast`: $v \geq 500$
+
+3. Store each category in a separate list.
+4. Count the number of particles in each category.
+5. Determine which category contains the most particles.
+
+
+---
+
+## Exercise 6 — Nested Particle Trajectories
+
+The following nested list contains the positions of six particles at different times:
+
+```python
+trajectories = [
+    [0.0, 0.4, 0.9, 1.3, 1.8, 2.1, 2.5, 2.9],
+    [0.0, -0.3, -0.7, np.nan, -1.4, -1.8, -2.0, -2.4],
+    [0.0, 0.2, 0.6, 1.1, 1.5, np.nan, 2.4, 2.8],
+    [0.0, -0.5, -0.8, -1.0, -1.4, -1.7, -2.1, -2.6],
+    [0.0, 0.6, 1.0, 1.7, np.nan, 2.6, 3.1, 3.5],
+    [0.0, -0.2, -0.4, -0.7, -0.9, -1.1, np.nan, -1.6]
+]
+```
+
+1. Identify and ignore all `np.nan` values.
+2. Create a new nested list called `clean_trajectories`.
+3. Preserve the separation between particles. Each particle should still have its own list.
+4. Count the total number of missing measurements.
+5. Create a dictionary the cleaned nest. Rows is particles and elements are measurements.
+
+---
+
+## Exercise 7 — Nested Experimental Data
+
+Three experiments were performed at different temperatures:
+
+```python
+experiments = [
+    ["run_1", 300, [1.21, 1.18, np.nan, 1.25, 1.23, 1.19, 1.27]],
+    ["run_2", 350, [1.46, 1.51, 1.48, np.nan, 1.55, 1.52, 1.49]],
+    ["run_3", 400, [1.82, np.nan, 1.79, 1.88, 1.85, 1.91, 1.86]],
+    ["run_4", 450, [2.13, 2.18, 2.09, 2.21, np.nan, 2.16, 2.20]],
+    ["run_5", 500, [2.45, 2.51, np.nan, 2.48, 2.55, 2.52, 2.49]]
+]
+```
+
+Each entry contains:
+
+```text
+[run_name, temperature, measurements]
+```
+
+1. Use a `for` loop to access each experimental run.
+2. Use another `for` loop to access its measurements.
+3. Remove the `np.nan` values.
+4. Calculate the mean measurement for each run.
+5. Store the results in a new nested list in the form:
+
+```python
+[
+    [run_name, temperature, mean],
+    ...
+]
+```
+
+
