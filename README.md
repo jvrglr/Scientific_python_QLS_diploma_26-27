@@ -12,6 +12,11 @@ Javier Aguilar : jaguilar@ictp.it. Office: room 212 former SISSA building (QLS s
 3. Final project (2 sessions).
 4. Exam.
 
+## Projects
+
+Students will work in groups of two or three on a project. The aim of the project is to demonstrate their programming skills, so there are no strict constraints on the topic. We will propose several possible topics for the projects. Students may also propose their own topics, but the suitability of the proposed topic as a project must be discussed with the professors in advance.
+
+
 ## Exam
 
 Each of you will have an independent oral exam based on your project. During the exam, you will have to answer questions about specific parts of your code. We may also ask other types of questions, such as what data types you used or what the inputs/outputs of your program are. We might also ask you to modify your code in person. **NO AI ALLOWED.**
