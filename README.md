@@ -21,13 +21,15 @@ Students will work in groups of two or three on a project. The aim of the projec
 
 Each of you will have an independent oral exam based on your project. During the exam, you will have to answer questions about specific parts of your code. We may also ask other types of questions, such as what data types you used or what the inputs/outputs of your program are. We might also ask you to modify your code in person. **NO AI ALLOWED.**
 
-* Assignments: 20%
+Preliminary schedule for the oral exam (presentation and questions): Each presentation is individual, there will be 20 minutes per student (10 for present and 10 for questions). We still have to decide if all the exams will take place on the same or in two days.
 
-* Project and exam: 80%
+* Assignments : 20%
 
-  - Project quality and oral presentation: 40%
+* Project and exam : 80%
+
+  - Project quality and oral presentation : 40%
   
-  - Answers to questions: 40%
+  - Answers to questions : 40%
 
 ## Course Schedule
 
@@ -42,7 +44,7 @@ Each of you will have an independent oral exam based on your project. During the
 | Week 4 14/10/26|- | - |Working on Project independently |
 | Week 4 16/10/26| -| - |  Working on Project independently |
 | Week 4 21/10/26|  Lecture 7 | Javier | Project |
-| Week 4 23/10/26| Lecture 8 | Both | Exam |
+| Week 4 28/10/26| Lecture 8 | Both | Exam |
 
 ## AI philosophy
 Quotes from Programming education in the AI era. Nature Reviews Psychology, 1-3, (2026). (https://www.nature.com/articles/s44159-026-00612-8)
