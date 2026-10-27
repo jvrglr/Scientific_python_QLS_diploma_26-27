@@ -23,7 +23,7 @@ Each of you will have an independent oral exam based on your project. During the
 
 Preliminary schedule for the oral exam (presentation and questions): Each presentation is individual, there will be 20 minutes per student (10 for present and 10 for questions). We still have to decide if all the exams will take place on the same or in two days.
 
-Final exam will be held in room 138 at SISSA from 11:30 to 17:00 on Wed. 28 Oct. 2026.
+**Final exam will be held in room 138 at SISSA from 11:30 to 17:00 on Wed. 28 Oct. 2026.**
 
 * Assignments : 20%
 
